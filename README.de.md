@@ -200,17 +200,17 @@ jagen.
 
 Das ist genau die Schleife, die BoltWizard bewusst nicht schließt. Um sie
 zu schließen, empfiehlt diese README die stärkste dedizierte CLI zur
-Feinjustierung: **[codebuff](https://codebuff.com/cli)**.
+Feinjustierung: **[codebuff](https://codebuff.com)**.
 
 Sobald du das Repo geklont hast, ist der empfohlene Weg zum **Debuggen,
 Refaktorieren und Feinjustieren** der App:
 
 1. Abhängigkeiten installieren:
    ```bash
-   npm install
+   npm install -g freebuff
    ```
 2. Öffne den **Projektordner** in deinem Terminal oder PowerShell.
-3. Starte die [`codebuff`](https://codebuff.com/cli) CLI:
+3. Starte die [`codebuff`](https://codebuff.com) CLI:
    ```bash
    codebuff
    ```

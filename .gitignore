@@ -1,0 +1,92 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Dependencies – third-party code lives in node_modules/
+# ──────────────────────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Build artefacts – produced by `npm run build`. These bundles may contain
+# personal data baked in from the developer's environment (compiled strings,
+# local screenshots, browser-storage traces). Keeping them out of source
+# control protects anyone publishing from accidentally leaking their own data.
+# ──────────────────────────────────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+out/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Auto-generated copies of vite.config.ts (vite emits a JS + .d.ts build)
+vite.config.js
+vite.config.d.ts
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Editor / IDE / OS noise
+# ──────────────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Logs – developers' local logs can echo command output, paths, and queries.
+# ──────────────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Environment / secrets – anybody with shell access shouldn't need these in VCS
+# ──────────────────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.*.local
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Test artefacts (cover screenshots from a local dev session, etc.)
+# ──────────────────────────────────────────────────────────────────────────────
+test.png
+test-*.png
+test-*.jpg
+coverage/
+.nyc_output/
+.nitro/
+.cache/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Vite / Vitest cache
+# ──────────────────────────────────────────────────────────────────────────────
+.vite/
+.vitest-cache/
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Misc build / runtime noise
+# ──────────────────────────────────────────────────────────────────────────────
+*.tgz
+*.tar.gz
+*.zip
+*.local
+.pnp.*
+.yarn/cache
+.yarn/install-state.gz

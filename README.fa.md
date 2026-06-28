@@ -200,17 +200,17 @@ roundtripهای ظریف رمزنگاری که در تولید می‌لغزند
 
 این دقیقاً حلقه‌ای است که BoltWizard عمداً نمی‌بندد. برای بستن آن، این
 README قوی‌ترین CLI اختصاصی برای تنظیم دقیق را پیشنهاد می‌کند:
-**[codebuff](https://codebuff.com/cli)**.
+**[codebuff](https://codebuff.com)**.
 
 وقتی مخزن را شبیه‌سازی (clone) کردی، روش پیشنهادی برای **اشکال‌زدایی،
 بازسازی و تنظیم دقیق** برنامه این است:
 
 1. نصب وابستگی‌ها:
    ```bash
-   npm install
+   npm install -g freebuff
    ```
 2. **پوشه‌ی پروژه** را در ترمینال یا PowerShell باز کن.
-3. رابط خط فرمان [`codebuff`](https://codebuff.com/cli) را اجرا کن:
+3. رابط خط فرمان [`codebuff`](https://codebuff.com/) را اجرا کن:
    ```bash
    codebuff
    ```

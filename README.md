@@ -14,7 +14,8 @@
   <a href="#"><img src="https://img.shields.io/badge/build-passing-6dd58c?style=for-the-badge" alt="Build" /></a>
   <a href="#"><img src="https://img.shields.io/badge/E2E-AES--GCM-ff6b9a?style=for-the-badge" alt="Crypto" /></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-5b3df5?style=for-the-badge" alt="PRs" /></a>
-  <a href="https://codebuff.com"><img src="https://img.shields.io/badge/built_with-Codebuff-blueviolet?style=for-the-badge" alt="Built with Codebuff" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/scaffolded_with-BoltWizard-ff6b9a?style=for-the-badge" alt="Scaffolded with BoltWizard" /></a>
+<a href="https://codebuff.com"><img src="https://img.shields.io/badge/fine--tuned_with-Codebuff-blueviolet?style=for-the-badge" alt="Fine-tuned with Codebuff" /></a>
 </p>
 
 <p align="center">
@@ -184,13 +185,24 @@ npm run build    # produces production-ready files in dist/
 
 ## 🛠️ After you download it — fine-tune with Codebuff
 
-This project was originally scaffolded with an **AI app-builder**. Web-based AI
-coders run on shared servers and are constrained by hardware limits — they
-produce the bones, but they cannot reliably debug deep state machines, type
-errors across files, or subtle crypto bugs.
+This project was originally scaffolded with **BoltWizard** — the AI
+app-builder the developer used to take the app from idea to working
+prototype in a single session.
+
+BoltWizard, like every browser-based AI coder, runs on shared servers and
+is constrained by **hardware limits**: limited context windows, GPU
+time-budgets, and the inability to keep an interactive debugging loop
+running across many file edits. It ships the bones — UI, types, basic
+crypto wiring — but it cannot reliably chase deep state-machine bugs,
+multi-file TypeScript errors, or subtle crypto round-trips that go wrong
+in production.
+
+That's the loop BoltWizard deliberately doesn't close. To close it, this
+README recommends the strongest dedicated CLI for fine-tuning it:
+**[codebuff](https://codebuff.com/cli)**.
 
 Once you've cloned the repo, the recommended way to **debug, refactor, and
-fine-tune** it is:
+fine-tune** the app is:
 
 1. Install dependencies:
    ```bash

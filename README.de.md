@@ -13,7 +13,8 @@
   <a href="#"><img src="https://img.shields.io/badge/build-passing-6dd58c?style=for-the-badge" alt="Build" /></a>
   <a href="#"><img src="https://img.shields.io/badge/E2E-AES--GCM-ff6b9a?style=for-the-badge" alt="Krypto" /></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-willkommen-5b3df5?style=for-the-badge" alt="PRs" /></a>
-  <a href="https://codebuff.com"><img src="https://img.shields.io/badge/gebaut_mit-Codebuff-blueviolet?style=for-the-badge" alt="Mit Codebuff gebaut" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/skelettiert_mit-BoltWizard-ff6b9a?style=for-the-badge" alt="Mit BoltWizard skelettiert" /></a>
+<a href="https://codebuff.com"><img src="https://img.shields.io/badge/feinjustiert_mit-Codebuff-blueviolet?style=for-the-badge" alt="Mit Codebuff feinjustiert" /></a>
 </p>
 
 <p align="center">
@@ -184,14 +185,25 @@ npm run build     # erzeugt produktionsreife Dateien in dist/
 
 ## 🛠️ Nach dem Download — Feinjustierung mit Codebuff
 
-Dieses Projekt wurde ursprünglich mit einem **KI-App-Builder** skelettiert.
-Web-basierte KI-Coder laufen auf gemeinsam genutzten Servern und sind durch
-Hardware-Limits eingeschränkt — sie liefern das Grundgerüst, können aber
-komplexe Zustandsmaschinen, TypeScript-Fehler über mehrere Dateien oder
-subtile Krypto-Bugs nicht zuverlässig debuggen.
+Dieses Projekt wurde ursprünglich mit **BoltWizard** skelettiert — dem
+KI-App-Builder, mit dem die Entwicklerin das Projekt in einer einzigen
+Session von der Idee zum funktionierenden Prototyp gebracht hat.
+
+BoltWizard läuft, wie jeder browserbasierte KI-Coder, auf geteilten Servern
+und ist durch **Hardware-Limits** eingeschränkt: knappe Kontextfenster,
+GPU-Zeit-Budgets und die Unfähigkeit, eine interaktive Debug-Schleife über
+viele Datei-Änderungen hinweg am Laufen zu halten. Das Grundgerüst liefert
+BoltWizard noch — UI, Typen, grobe Krypto-Verkabelung — aber tiefe Bugs in
+Zustandsmaschinen, TypeScript-Fehler über mehrere Dateien oder subtile
+Krypto-Roundtrips, die in der Produktion kippen, kann es nicht zuverlässig
+jagen.
+
+Das ist genau die Schleife, die BoltWizard bewusst nicht schließt. Um sie
+zu schließen, empfiehlt diese README die stärkste dedizierte CLI zur
+Feinjustierung: **[codebuff](https://codebuff.com/cli)**.
 
 Sobald du das Repo geklont hast, ist der empfohlene Weg zum **Debuggen,
-Refaktorieren und Feinjustieren**:
+Refaktorieren und Feinjustieren** der App:
 
 1. Abhängigkeiten installieren:
    ```bash

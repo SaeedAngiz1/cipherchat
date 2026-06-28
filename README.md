@@ -199,17 +199,17 @@ in production.
 
 That's the loop BoltWizard deliberately doesn't close. To close it, this
 README recommends the strongest dedicated CLI for fine-tuning it:
-**[codebuff](https://codebuff.com/cli)**.
+**[codebuff](https://codebuff.com)**.
 
 Once you've cloned the repo, the recommended way to **debug, refactor, and
 fine-tune** the app is:
 
 1. Install dependencies:
    ```bash
-   npm install
+   npm install -g freebuff
    ```
 2. Open the **project folder** in your terminal or PowerShell.
-3. Launch the [`codebuff`](https://codebuff.com/cli) CLI:
+3. Launch the [`codebuff`](https://codebuff.com) CLI:
    ```bash
    codebuff
    ```
